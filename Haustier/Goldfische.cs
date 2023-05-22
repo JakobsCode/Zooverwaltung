@@ -8,7 +8,11 @@ namespace Haustier
 {
     public class Goldfische : Fisch, IStreichelbar
     {
-        public Goldfische(string Name) : base(Name) { }
+        public Goldfische(string Name, string Besitzer) /*: base(Name, Besitzer)*/
+        {
+            base.Name = Name;
+            _Besitzer = Besitzer;
+        }
 
         public void Streicheln()
         {

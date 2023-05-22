@@ -8,7 +8,7 @@ namespace Haustier
 {
     public abstract class Fisch : Haustier
     {
-        public Fisch(string Name) : base(Name){ }
+        //public Fisch(string Name, string Besitzer) : base(Name, Besitzer) { }
 
         public abstract void Schwimmen();
 

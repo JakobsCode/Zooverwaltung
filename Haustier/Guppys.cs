@@ -8,7 +8,11 @@ namespace Haustier
 {
     public class Guppys : Fisch
     {
-        public Guppys(string Name) : base(Name){ }
+        public Guppys(string Name, string Besitzer) /*: base(Name, Besitzer)*/
+        {
+            base.Name = Name;
+            _Besitzer = Besitzer;
+        }
 
         public override void Schwimmen()
         {

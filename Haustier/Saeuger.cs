@@ -8,7 +8,7 @@ namespace Haustier
 {
     public abstract class Saeuger : Haustier, IStreichelbar
     {
-        public Saeuger(string Name) : base(Name) { }
+        //public Saeuger(string Name, string Besitzer) : base(Name, Besitzer) { }
 
         public abstract void Fortbewegen();
 

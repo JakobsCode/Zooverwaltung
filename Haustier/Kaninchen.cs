@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Haustier
 {
-    public class Kaninchen : Saeuger
+    public class Kaninchen : Saeuger, IPflanzenfresser
     {
-        public Kaninchen(string Name) : base(Name) { }
+        public Kaninchen(string Name, string Besitzer) /*: base(Name, Besitzer) */{
+            base.Name = Name;
+            _Besitzer = Besitzer;
+        }
+
+        public void Fressen(string nahrung)
+        {
+            Console.WriteLine($"Kaninchen {Name} frisst {nahrung}.");
+        }
 
         public override void Streicheln()
         {
