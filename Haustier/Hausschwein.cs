@@ -13,6 +13,10 @@ namespace Haustier
             base.Name = Name;
             _Besitzer = Besitzer;
         }
+        public void Fressen(string nahrung)
+        {
+            Console.WriteLine($"Hauschein {Name} frisst komisches Ding Namens {nahrung}");
+        }
         void IFleischFresser.Fressen(string nahrung) {
             Console.WriteLine($"Hausschwein {Name} frisst fleischigen {nahrung}.");
         }
